@@ -37,5 +37,5 @@ out/
 .vscode/
 
 
-### STS application.properties ###
+# Ignore application.properties file
 application.properties
