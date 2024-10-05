@@ -5,7 +5,7 @@ import java.sql.Date;
 public class Genre {
 	public Integer id;
 	public String name;
-	public Date productionYear;
+	public Integer productionYear;
 	public String description;
 	public String genre;
 	
@@ -22,10 +22,10 @@ public class Genre {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getProductionYear() {
+	public Integer getProductionYear() {
 		return productionYear;
 	}
-	public void setProductionYear(Date productionYear) {
+	public void setProductionYear(Integer productionYear) {
 		this.productionYear = productionYear;
 	}
 	public String getDescription() {

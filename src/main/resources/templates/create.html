@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<title>Animation Create</title>
+</head>
+<body>
+<h1>data 생성</h1>
+<div class="btnGroup">
+	<ul>
+		<li><a th:href="@{/}">홈으로 이동</a></li>
+		<li><a th:href="@{/}">취소</a></li>
+	</ul>
+</div>
+
+<form id="createForm" th:action="@{/}" method="post">
+	<fieldset class="dataRowGroup">
+		<legend>장르</legend>
+		<input type="radio" id="comedy" name="genre" value="comedy">
+		<label for="comedy">코메디</label>
+		<input type="radio" id="animation" name="genre" value="animation">
+		<label for="animation">애니메이션</label>
+		<input type="radio" id="action" name="genre" value="action">
+		<label for="action">액션</label>
+	</fieldset>
+	<fieldset class="dataRowGroup">
+		<legend>영화 정보</legend>
+		<div class="dataInfo">
+			<label for="info_name">이름: </label>
+			<input type="text" id="info_name" placeholder="영화 이름 입력"><br/>
+		</div>
+		<div class="dataInfo">
+			 <label for="info_year">연도: </label>
+			 <input type="text" id="info_year" placeholder="영화 개봉 연도 입력"><br/>
+		</div>
+		<div class="dataInfo">
+			<label for="info_des">설명: </label>
+			<textarea name="" id="info_des" placeholder="영화 설명 입력" rows="5"></textarea>
+		</div>
+	</fieldset>
+  
+	<div class="fromBtnGroup">
+		<button type="reset" id="resetBtn">리셋</button>
+		<button type="submit" id="submitBtn">버튼</button>
+	</div>
+</form>
+
+<script th:src="@{/js/create.js}"></script>
+</body>
+</html>

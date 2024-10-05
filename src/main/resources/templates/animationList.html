@@ -7,8 +7,11 @@
 </head>
 <body>
 <h1>Animation List - 애니메이션 목록</h1>
-<div class="homeBtn">
-  <a th:href="@{/}">홈으로 이동</a>
+<div class="btnGroup">
+  <ul>
+    <li><a th:href="@{/}">홈으로 이동</a></li>
+    <li><a th:href="@{/create}">data 생성</a></li>
+  </ul>
 </div>
 <div id="loading_id" class="loading">loading... 로딩중...</div>
 <div id="error_id" class="error">fetching 과정에서 오류 발생.</div>
