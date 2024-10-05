@@ -1,5 +1,7 @@
 package com.ysedu.hj.ott.comedy;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,5 +14,9 @@ public class ComedyService {
 	
 	public Genre getComedy(Integer id) {
 		return comedyMapper.getComedyById(id);
+	}
+	
+	public List<Genre> getComedyList() {
+		return comedyMapper.getComedyList();
 	}
 }

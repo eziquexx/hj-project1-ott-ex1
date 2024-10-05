@@ -4,4 +4,7 @@
 	<select id="getComedyById" resultType="com.ysedu.hj.ott.Genre">
 		SELECT * FROM ottdb_movie WHERE genre = 'comedy' AND id = #{id}
 	</select>
+	<select id="getComedyList" resultType="com.ysedu.hj.ott.Genre">
+	SELECT * FROM ottdb_movie WHERE genre = 'comedy'
+	</select>
 </mapper>
