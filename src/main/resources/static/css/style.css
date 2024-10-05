@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+h1 {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+table {
+	position: relative;
+	display: block;
+	border: 1px solid #cacaca;
+	border-collapse: collapse;
+	margin: 0 auto 100px;
+	width: 500px;
+	text-align: left;
+	line-height: 120%;
+}
+thead, tbody, tr, th, td {
+	display: block;
+}
+th, td {
+	padding: 10px 12px;
+	border-bottom: 1px solid #cacaca;
+}
+a {
+	text-decoration: none;
+	color: #222;
+	transition: color ease 0.3s;
+}
+a:hover {
+	color: coral;
+}

@@ -17,15 +17,20 @@ public class AnimationController {
 	@Autowired
 	private AnimationService animationService;
 	
-	@GetMapping
-	@ResponseBody
-	public String getAnimation() {
-		return "animation";
-	}
-	
 	@GetMapping("/{id}")
 	@ResponseBody
 	public Genre getAnimation(@PathVariable("id") Integer id) {
 		return animationService.getAnimation(id);
+	}
+	
+	@GetMapping
+	public String getAnimation() {
+		return "animationList";
+	}
+	
+	@GetMapping("/api")
+	@ResponseBody
+	public List<Genre> getAnimationList() {
+		return animationService.getAnimationList();
 	}
 }

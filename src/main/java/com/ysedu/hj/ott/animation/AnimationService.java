@@ -15,5 +15,9 @@ public class AnimationService {
 	public Genre getAnimation(Integer id) {
 		return animationMapper.getAnimationById(id);
 	}
+	
+	public List<Genre> getAnimationList() {
+		return animationMapper.getAnimationList();
+	}
 
 }

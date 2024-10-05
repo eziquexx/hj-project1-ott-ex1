@@ -9,4 +9,5 @@ import com.ysedu.hj.ott.Genre;
 @Mapper
 public interface AnimationMapper {
 	Genre getAnimationById(Integer id);
+	List<Genre> getAnimationList();
 }
