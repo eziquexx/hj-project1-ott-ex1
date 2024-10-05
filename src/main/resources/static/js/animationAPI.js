@@ -31,9 +31,9 @@ function animationAPI() {
 		lists.forEach(item => {
 			const tbodytr = document.createElement("tr");
 			const td = document.createElement("td");
-			const itemYear = item.productionYear;
-			const year = itemYear.slice(0, 4);
-			td.innerHTML = `<a href="/animation/${item.id}">${item.name}(${year})</a>`;
+			//const itemYear = item.productionYear;
+			//const year = itemYear.slice(0, 4);
+			td.innerHTML = `<a href="/animation/${item.id}">${item.name}(${item.productionYear})</a>`;
 			tbody.appendChild(tbodytr);
 			tbodytr.appendChild(td);
 		});
