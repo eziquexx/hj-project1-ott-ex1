@@ -13,6 +13,29 @@ h1 {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
+h2 {
+		display: block;
+		text-align: center;
+		color: #909090;
+}
+
+/* {genre}List.html */
+.homeBtn {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.homeBtn a {
+	display: inline-block;
+	margin: 0 auto 14px;
+	padding: 8px;
+	color: #222;
+	text-decoration: none;
+	transition: color ease 0.3s;
+}
+.homeBtn a:hover {
+	color: lightcoral;
+}
 table {
 	position: relative;
 	display: block;
@@ -37,4 +60,40 @@ a {
 }
 a:hover {
 	color: coral;
+}
+
+/* index.html */
+nav {
+		display: block;
+		position: relative;
+		width: 100%;
+}
+nav ul {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		width: 600px;
+		margin: 20px auto 50px;
+}
+nav ul li {
+	display: block;
+	width: 50%;
+	height:auto;
+	border: 1px solid rgb(209, 209, 209);
+	padding: 30px 20px;
+	text-align: center;
+	line-height: 120%;
+	transition: background-color ease 0.4s;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #222;
+	transition: color ease 0.4s;
+}
+nav ul li:hover {
+	cursor: pointer;
+	background-color: lightcoral;
+}
+nav ul li:hover a {
+	color: #fff;
 }
