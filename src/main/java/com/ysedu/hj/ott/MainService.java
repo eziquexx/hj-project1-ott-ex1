@@ -5,12 +5,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
-public class CreateService {
+public class MainService {
 	@Autowired
-	private CreateMapper createMapper;
+	private MainMapper mainMapper;
 	
 	public void setMovieInfo(Genre movie) {
-		createMapper.setMovieInfo(movie);
+		mainMapper.setMovieInfo(movie);
 	}
+
+	public void deleteItem(Integer id) {
+		mainMapper.deleteItemById(id);
+	};
 	
 }

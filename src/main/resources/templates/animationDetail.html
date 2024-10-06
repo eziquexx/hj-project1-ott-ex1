@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+<title th:text="${genre.name}"></title>
+</head>
+<body>
+<h1>영화 상세페이지</h1>
+<div class="btnGroup">
+  <ul>
+    <li><a th:href="@{/}">홈으로 이동</a></li>
+    <li><a th:href="@{/animation}">목록으로 이동</a></li>
+  </ul>
+</div>
+
+<div id="movieDetail">
+	<div>
+		<img src="https://dummyimage.com/200x240/dfe8e7/516f8c" alt="">
+	</div>
+	<ul>
+		<li class="info_name" th:text="${genre.name} + ' (' +${genre.productionYear} + ')' + ' - ' + ${genre.genre}"></li>
+		<li class="info_des" th:text="${genre.description}"></li>
+	</ul>
+</div>
+
+<button th:onclick="'deleteItem(' + ${genre.id} + ')'" id="delBtn">삭제</button>
+
+<script th:src="@{/js/delete.js}"></script>
+</body>
+</html>
